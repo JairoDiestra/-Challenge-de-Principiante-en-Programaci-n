@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/svg/logo-alura.svg">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+</head>
+<body>
+    <!-- Header-->
+    <header>
+        <div class="navbar">
+            <div class="navbar__container">
+                <img src="./assets/svg/logo-alura.svg" class="navbar__logo" alt="Logo de Alura" >
+            </div>
+        </div>
+    </header>
+    <!-- Main-->
+    <main>
+        <div class="content">
+            <!-- Section1-->
+            <section class="content__input">
+                <textarea id="input-text" class="content__input__textarea" placeholder="Ingrese el texto aqui" autofocus style="height: 350px;"></textarea>
+                <div class="content__input__group">
+                    <div id="msg-container" class="content__input__message">
+                        <img src="./assets/svg/icono-alerta.svg" alt="Icono de alerta">
+                        <h4 id="msg-text" class="message__text">Solo letras minúsculas y sin acentos</h4>
+                    </div>
+                    <div class="content__input__actions">
+                        <button id="encrypt-btn" class="actions__encrypt">Encriptar</button>
+                        <button id="decrypt-btn" class="actions__decrypt" disabled >Desencriptar</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section2-->
+            <section id="output-section" class="content__output">
+                <img id="figure-img" class="content__output__figure" src="./assets/svg/muneco.svg" alt="Ningun mensaje fue encontrado. Ingresa el texto que desees encriptar o desencriptar">
+                <textarea id="output-text" class="content__output__textarea" placeholder="Ningún mensaje fue encontrado"></textarea>
+                <p id="output-msg" class="content__output__instruction">Ingresa el texto que desees encriptar o desencriptar</p>
+                <div class="content__output__actions">
+                    <button id="copy-btn" class="actions__copy hide__element">Copiar</button>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!-- Footer-->
+    <footer>Desarrollado por Jairo Nuñez Diestra</footer>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
